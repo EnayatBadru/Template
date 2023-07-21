@@ -75,7 +75,6 @@ header button.btn-mobile,
         transition: var(--trs1);
     }
     
-    
     header button.btn-mobile::before{
         top: 0;
         transition: var(--trs1);
@@ -99,6 +98,7 @@ header button.btn-mobile,
     }
 
     /* !menu */
+
 }
 
 /* *mobile - whidth: 360px */
