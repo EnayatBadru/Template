@@ -4,9 +4,9 @@
 
 :root {
   /* color */
-  --clr1: #363636;
-  --clr2: #a98743;
-  --clr3: #eef4d4;
+  --clr1: #363636;  /* escura */
+  --clr2: #eef4d4; /* clara */
+  --clr3: #a98743; /* opcional-dark */
 
   /* transition */
   --trs1: 0.3s ease all;
@@ -80,8 +80,8 @@ body.light .button:hover {
   padding: 5px;
   letter-spacing: 2px;
   border: 1px solid transparent;
-  background: var(--clr2);
-  color: var(--clr3);
+  background: var(--clr3);
+  color: var(--clr2);
   transition: var(--trs1);
 }
 
@@ -92,8 +92,8 @@ body.light .button {
   padding: 5px;
   letter-spacing: 2px;
   border: 1px solid transparent;
-  background: var(--clr3);
-  color: var(--clr2);
+  background: var(--clr2);
+  color: var(--clr3);
   transition: var(--trs1);
 }
 
@@ -186,7 +186,7 @@ body.light .link a {
 }
 
 .link a:hover {
-  color: var(--clr3);
+  color: var(--clr2);
   transition: var(--trs1);
 }
 
@@ -197,7 +197,7 @@ body.light .link a:hover {
 
 ::-webkit-scrollbar {
   /* white-color */
-  background: var(--clr3);
+  background: var(--clr2);
   width: 0;
   /* width: 5px; */
 }
