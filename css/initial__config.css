@@ -132,7 +132,7 @@ body.light .button {
   letter-spacing: 2px;
   font-weight: 700;
   line-height: 1.5em;
-  color: var(--clr1);
+  color: var(--clr-h1-dark);
 }
 
 .h1.txt-logo {
@@ -236,7 +236,7 @@ body.light .link a:hover {
 
 /* *Desktop - whidth: 992px */
 @media (max-width: 992px) {
-  
+
 
 }
 

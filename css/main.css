@@ -6,13 +6,15 @@
     background: var(--clr2-light);
 }
 
+/* BANNER - CONTENT IMG */
 .banner__main{
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-.content{
+
+.banner{
     width: 100%;
 }
 
