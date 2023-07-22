@@ -1,0 +1,49 @@
+/* *AMPLO - width: +1200px */
+
+#main{
+    max-width: 100vw;
+    height: auto;
+    background: var(--clr2-light);
+}
+
+.banner__main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.content{
+    width: 100%;
+}
+
+.icon{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 50px 0;
+    font-size: 1.5em;
+    animation: iconBanner 2.8s linear infinite;
+}
+
+@keyframes iconBanner {
+    0%,100%{
+        margin: 50px 0;
+    }
+
+    50%{
+        margin: 30px 0;
+    }
+}
+
+/* *Desktop - whidth: 992px */
+@media (max-width: 992px) {
+}
+
+/* *Tables - whidth: 768px */
+@media (max-width: 768px) {
+}
+
+/* *mobile - whidth: 360px */
+@media (max-width: 360px) {
+}

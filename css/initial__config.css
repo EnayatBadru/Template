@@ -8,6 +8,36 @@
   --clr2: #eef4d4; /* clara */
   --clr3: #a98743; /* opcional-dark */
 
+
+  /* COLOR - LIGHT */
+  --clr1-light: #363636;
+  --clr2-light: #eef4d4;
+  --clr3-light: #a98743;
+  
+  /* COLOR - DARK */
+  --clr1-dark: ;
+  --clr2-dark: ;
+  --clr3-dark: ;
+
+  /* MORE - COLORS */
+  --clr-h1-light: #fff;
+  --clr-h2-light: #fff;
+  --clr-txt-light: #fff;
+  --clr-span-light: #fff;
+  --clr-a-light: #fff;
+  
+  --clr-h1-dark: #333;
+  --clr-h2-dark: #333;
+  --clr-txt-dark: #333;
+  --clr-span-dark: #333;
+  --clr-a-dark: #333;
+  
+
+  /* RGBA */
+  --rgba1: rgba(0,0,0,.3);
+  --rgba2: rgba(0,0,0,.4);
+  --rgba3: rgba(0,0,0,.5);
+
   /* transition */
   --trs1: 0.3s ease all;
   --trs2: 0.5s ease all;
@@ -75,26 +105,24 @@ html {
 
 .button,
 body.light .button:hover {
-  width: 150px;
-  height: 70px;
-  padding: 5px;
-  letter-spacing: 2px;
-  border: 1px solid transparent;
-  background: var(--clr3);
-  color: var(--clr2);
-  transition: var(--trs1);
+  outline: none !important;
+  border: 1px solid transparent !important;
+  background: var(--clr1-light) !important;
+  color: var(--clr2-light) !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0 2px rgba(0,0,0,.3) !important;
+  cursor: pointer !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  transition: var(--trs1) !important;
 }
 
 .button:hover,
 body.light .button {
-  width: 150px;
-  height: 70px;
-  padding: 5px;
-  letter-spacing: 2px;
-  border: 1px solid transparent;
-  background: var(--clr2);
-  color: var(--clr3);
-  transition: var(--trs1);
+  background: var(--clr3-light) !important;
+  color: var(--clr2-light) !important;
+  transition: var(--trs1) !important;
 }
 
 /* txt */
@@ -103,7 +131,6 @@ body.light .button {
   font-size: 1.7em;
   letter-spacing: 2px;
   font-weight: 700;
-  padding: 5px 0 0 15px;
   line-height: 1.5em;
   color: var(--clr1);
 }
@@ -116,61 +143,58 @@ body.light .h1 {
   font-size: 1.7em;
   letter-spacing: 2px;
   font-weight: 700;
-  padding: 5px 0 0 15px;
   line-height: 1.5em;
-  color: #fff;
+  color: var(--clr-h1-light);
 }
 
 .h2 {
   font-size: 1.4em;
   letter-spacing: 2px;
   font-weight: 700;
-  padding: 5px 0 0 15px;
   line-height: 1.5em;
-  color: var(--clr1);
+  color: var(--clr-h2-dark);
 }
 
 body.light .h2 {
   font-size: 1.7em;
   letter-spacing: 2px;
   font-weight: 700;
-  padding: 5px 0 0 15px;
   line-height: 1.5em;
-  color: #fff;
+  color: var(--clr-h2-light);
 }
 
 .txt {
   font-size: 1em;
   font-weight: normal;
   line-height: 1.5em;
-  color: var(--clr1);
+  color: var(--clr-txt-dark);
 }
 
 body.light .txt {
   font-size: 1em;
   font-weight: normal;
   line-height: 1.5em;
-  color: #fff;
+  color: var(--clr-txt-light);
 }
 
 .span {
   font-size: 1em;
   font-weight: normal;
   line-height: 1.5em;
-  color: #fff;
+  color: var(--clr-span-dark);
 }
 
 body.light .span {
   font-size: 1em;
   font-weight: normal;
   line-height: 1.5em;
-  color: var(--clr1);
+  color: var(--clr-span-light);
 }
 
 .link a {
   font-size: 1em;
   font-weight: normal;
-  color: var(--clr1);
+  color: var(--clr-a-dark);
   border: 1px solid transparent;
   padding: 5px;
   transition: var(--trs1);
@@ -179,19 +203,19 @@ body.light .span {
 body.light .link a {
   font-size: 1em;
   font-weight: normal;
-  color: #fff;
+  color: var(--clr-a-light);
   border: 1px solid transparent;
   padding: 5px;
   transition: var(--trs1);
 }
 
 .link a:hover {
-  color: var(--clr2);
+  color: var(--clr-a-light);
   transition: var(--trs1);
 }
 
 body.light .link a:hover {
-  color: var(--clr1);
+  color: var(--clr-a-dark);
   transition: var(--trs1);
 }
 
@@ -212,10 +236,14 @@ body.light .link a:hover {
 
 /* *Desktop - whidth: 992px */
 @media (max-width: 992px) {
+  
+
 }
 
 /* *Tables - whidth: 768px */
 @media (max-width: 768px) {
+
+
 }
 
 /* *mobile - whidth: 360px */
