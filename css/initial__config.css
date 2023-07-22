@@ -18,6 +18,12 @@
   --clr-footer: #333;
   --clr-footer-txt: #eee;
   --clr-icon-footer: #eee;
+  --clr-border: #eee;
+  
+  --clr-orador1: #C9E3AC;
+  --clr-orador2: #EA9010;
+  --clr-orador3: #37371F;
+  --clr-orador4: #C5AFA0;
 
   /* COLOR - DARK */
   --clr1-dark: ;
@@ -30,7 +36,7 @@
   --clr-txt-light: #fff;
   --clr-span-light: #fff;
   --clr-a-light: #fff;
-
+  
   --clr-h1-dark: #333;
   --clr-h2-dark: #333;
   --clr-txt-dark: #333;
@@ -113,8 +119,6 @@ body.light .button:hover {
   background: var(--clr1-light) !important;
   color: var(--clr2-light) !important;
   padding: 10px !important;
-  border-radius: 10px !important;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) !important;
   cursor: pointer !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
@@ -126,6 +130,11 @@ body.light .button {
   background: var(--clr3-light) !important;
   color: var(--clr2-light) !important;
   transition: var(--trs1) !important;
+}
+
+.radius{
+  border-radius: 10px !important;
+  box-shadow: 0 0 2px rgba(0,0,0,.3) !important;
 }
 
 /* txt */
@@ -146,7 +155,7 @@ body.light .h1 {
   font-size: 1.7em;
   letter-spacing: 2px;
   font-weight: 700;
-  line-height: 1.5em;
+  line-height: 48px;
   color: var(--clr-h1-light);
 }
 
@@ -154,7 +163,7 @@ body.light .h1 {
   font-size: 1.4em;
   letter-spacing: 2px;
   font-weight: 700;
-  line-height: 1.5em;
+  line-height: 48px;
   color: var(--clr-h2-dark);
 }
 
@@ -169,7 +178,7 @@ body.light .h2 {
 .txt {
   font-size: 1em;
   font-weight: normal;
-  line-height: 1.5em;
+  line-height: 30px;
   color: var(--clr-txt-dark);
 }
 
@@ -241,9 +250,7 @@ body.light .link a:hover {
 
 /* CSS para o texto selecionado */
 ::selection {
-  background-color: var(
-    --bg-txtSelection
-  ); /* Define a cor de fundo do texto selecionado */
+  background-color: var(--bg-txtSelection); /* Define a cor de fundo do texto selecionado */
   color: var(--color-txtSelection); /* Define a cor do texto selecionado */
 }
 
