@@ -46,6 +46,19 @@
 @media (max-width: 768px) {
 }
 
+@media (max-width: 596px){
+
+}
+
 /* *mobile - whidth: 360px */
 @media (max-width: 360px) {
+    .banner{
+        text-align: center;
+    }
+
+    
+}
+
+@media (max-width: 280px){
+
 }
