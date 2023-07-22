@@ -4,16 +4,19 @@
 
 :root {
   /* color */
-  --clr1: #363636;  /* escura */
+  --clr1: #363636; /* escura */
   --clr2: #eef4d4; /* clara */
   --clr3: #a98743; /* opcional-dark */
-
 
   /* COLOR - LIGHT */
   --clr1-light: #363636;
   --clr2-light: #eef4d4;
   --clr3-light: #a98743;
-  
+
+  --bg-txtSelection: #1d2b3a;
+  --color-txtSelection: #00dfc4;
+
+
   /* COLOR - DARK */
   --clr1-dark: ;
   --clr2-dark: ;
@@ -25,18 +28,17 @@
   --clr-txt-light: #fff;
   --clr-span-light: #fff;
   --clr-a-light: #fff;
-  
+
   --clr-h1-dark: #333;
   --clr-h2-dark: #333;
   --clr-txt-dark: #333;
   --clr-span-dark: #333;
   --clr-a-dark: #333;
-  
 
   /* RGBA */
-  --rgba1: rgba(0,0,0,.3);
-  --rgba2: rgba(0,0,0,.4);
-  --rgba3: rgba(0,0,0,.5);
+  --rgba1: rgba(0, 0, 0, 0.3);
+  --rgba2: rgba(0, 0, 0, 0.4);
+  --rgba3: rgba(0, 0, 0, 0.5);
 
   /* transition */
   --trs1: 0.3s ease all;
@@ -54,14 +56,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 100vw;
   height: 300vh;
   overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* components */
@@ -111,7 +113,7 @@ body.light .button:hover {
   color: var(--clr2-light) !important;
   padding: 10px !important;
   border-radius: 10px !important;
-  box-shadow: 0 0 2px rgba(0,0,0,.3) !important;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) !important;
   cursor: pointer !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
@@ -232,18 +234,20 @@ body.light .link a:hover {
   border-radius: 5px;
 }
 
+/* CSS para o texto selecionado */
+::selection {
+  background-color: var(--bg-txtSelection); /* Define a cor de fundo do texto selecionado */
+  color: var(--color-txtSelection); /* Define a cor do texto selecionado */
+}
+
 /* *AMPLO - width: +1200px */
 
 /* *Desktop - whidth: 992px */
 @media (max-width: 992px) {
-
-
 }
 
 /* *Tables - whidth: 768px */
 @media (max-width: 768px) {
-
-
 }
 
 /* *mobile - whidth: 360px */
