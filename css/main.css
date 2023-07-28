@@ -16,6 +16,10 @@
     position: relative;
 }
 
+#home .h1{
+    font-size: 2em !important;
+}
+
 #home .h2{
     text-align: center;
 }
@@ -23,6 +27,14 @@
 
 .banner{
     width: 100%;
+}
+
+.especial-container{
+    text-shadow: 0 0 2px rgba(0,0,0,.8);
+    -webkit-mask: linear-gradient(#1d2b3a 0 0),
+    linear-gradient(#1d2b3a 0 0);
+   -webkit-mask-clip: text,padding;
+    -webkit-mask-composite: xor;
 }
 
 .icon{
@@ -194,12 +206,9 @@
     .banner{
         text-align: center;
     }
-
-    
 }
 
 @media (max-width: 280px){
-    
     #about .card span.icon-check{
         transform: translate(12px, 13px);
     }
